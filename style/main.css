@@ -7,41 +7,38 @@ html {
     font-family: 'Fredoka', sans-serif;
     background-image: url(imagenes/fondo-madera.png);
 }
-.barra{
+.main-header {
     position: sticky;
     top: 0;
     background-color: #ab3ed8;
     display: flex;
     justify-content: center;
-    width: 100vw;
+
 }
-.barra__links li{
-    list-style-type: none;
-    display: inline;
-}
-nav {
-	position: relative;
-    top: 3rem;
-}
-.barra img{
+.main-header img {
     width: 8rem;
     padding: 2rem;
 }
-ul {
+.main-nav {
+    position: relative;
+    top: 3rem;
+}
+nav ul {
     list-style: none;
     font-size:0;
     padding: 0;
 }
-li {
+nav li {
     display: inline-block;
     width: 15%;
-    font-size: 2rem;
+    list-style-type: none;
+    display: inline;
 }
-a {
-    font-size: 3rem;
+nav a {
+    font-size: 2vw;
     text-align: center;
     color: black;
-    padding: 5rem;
+    padding: 2vw;
     text-transform: uppercase;
     text-decoration: none;
 }
@@ -71,6 +68,7 @@ a {
     color: white;
     font-size: 3vw;
     grid-area: titulo;
+    text-align: center;
 }
 .subtitle--negro {
     color: black;
@@ -82,6 +80,7 @@ a {
     color: black;
     font-size: 2vw;
     grid-area: texto;
+    text-align: center;
 }
 .image {
     border-radius: 5rem;

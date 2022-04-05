@@ -5,7 +5,7 @@
 html {
     font-size: 62.5%;
     font-family: 'Fredoka', sans-serif;
-    background-image: url(imagenes/fondo-madera.png);
+    background-image: url(../imagenes/fondo-madera.png);
 }
 .main-header {
     position: sticky;
@@ -41,6 +41,10 @@ nav a {
     padding: 2vw;
     text-transform: uppercase;
     text-decoration: none;
+    transition: all 1s;
+}
+a:hover {
+    background-color: #2196f3;
 }
 .block {
     padding-bottom: 30px;
@@ -74,7 +78,6 @@ nav a {
         "texto"
         "titulo-1"
         "texto-1";
-    grid-template-rows: 20% 40% 40%;
     grid-gap: 10px;
     justify-items: center;
     align-items: center;
@@ -98,12 +101,14 @@ nav a {
     font-size: 3vw;
     grid-area: titulo;
     text-align: center;
+    padding: 5px;
 }
 .subtitle--1 {
     color: white;
     font-size: 3vw;
     grid-area: titulo-1;
     text-align: center;
+    margin: 40px;
 }
 .subtitle--negro {
     color: black;
@@ -128,6 +133,10 @@ nav a {
     width: 40vw;
     margin: 5rem;
     grid-area: imagen;
+    transition: all 2s;
+}
+.image:hover {
+    width: 50vw;
 }
 .formulario {
     display: block;
@@ -213,6 +222,7 @@ iframe {
             "titulo titulo-1"
             "texto texto-1"
     }
+}
 @media screen and (min-width: 1024px) {
     .block {
         grid-template-columns: 50% 50%;
@@ -224,7 +234,7 @@ iframe {
     .block-preguntas {
         grid-template-areas: 
             "titulo titulo-1"
-            "texto texto-1"
+            "texto texto-1";
     }
     .text {
         font-size: 2vw;

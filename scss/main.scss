@@ -1,0 +1,23 @@
+$color1: #ab3ed8;
+$color2: #0069c0;
+
+*{
+	margin: 0;
+	padding: 0;
+}
+body {
+    font-family: 'Fredoka', sans-serif;
+    background-image: url(../imagenes/fondo-madera.png);
+}
+nav{
+    background-color: $color1;
+}
+main{
+    .card{
+        margin: 30px;
+        background-color: $color2;
+    }
+    .card-title{
+        color: white;
+    }
+}

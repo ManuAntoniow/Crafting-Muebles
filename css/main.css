@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: 'Fredoka', sans-serif;
+  background-image: url(../imagenes/fondo-madera.png); }
+
+nav {
+  background-color: #ab3ed8; }
+
+main .card {
+  margin: 30px;
+  background-color: #0069c0; }
+
+main .card-title {
+  color: white; }

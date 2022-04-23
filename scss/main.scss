@@ -1,26 +1,56 @@
-$color1: #ab3ed8;
-$color2: #0069c0;
+$color-1: #ab3ed8;
+$color-2: #0069c0;
+$fuente-principal: 'Fredoka', sans-serif;
+$titulo: 80px;
+$texto: 30px;
 
 *{
 	margin: 0;
 	padding: 0;
 }
-body {
-    font-family: 'Fredoka', sans-serif;
-    background-image: url(../imagenes/fondo-madera.png);
-}
 nav{
-    background-color: $color1;
+    background-color: $color-1;
+}
+body {
+    font-family: $fuente-principal;
+    @media (prefers-color-scheme: light) {
+        background-image: url(../imagenes/fondo-madera.png);
+    }
+    @media (prefers-color-scheme: dark) {
+        background-image: url(../imagenes/fondo-madera-oscuro.jpg);
+        .head {color: white;}
+    }
+    @media screen and (min-width: 768px){
+        .card-title{font-size: $titulo / 2;}
+        .subtitle{font-size: $titulo / 4;}
+        .card-text{font-size: $texto / 2;}
+        .head {font-size: $titulo / 2;}
+    }
+    @media screen and (min-width: 1024px){
+        .card-title{font-size: $titulo;}
+        .subtitle{font-size: $titulo / 2;}
+        .card-text{font-size: $texto;}
+        .head {font-size: $titulo;}
+    }
 }
 main{
     .card{
         margin: 30px;
-        background-color: $color2;
+        background-color: $color-2;
     }
     .card-title{
         color: white;
     }
     .form-outline{
         margin: 30px;
+    }
+    .btn{
+        margin: 30px;
+    }
+    img{
+        height: 100%;
+    }
+    .head{
+        margin-top: 20px;
     }
 }

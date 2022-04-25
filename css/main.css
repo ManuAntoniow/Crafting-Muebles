@@ -2,11 +2,10 @@
   margin: 0;
   padding: 0; }
 
-nav {
-  background-color: #ab3ed8; }
-
 body {
   font-family: "Fredoka", sans-serif; }
+  body nav {
+    background-color: #ab3ed8; }
   @media (prefers-color-scheme: light) {
     body {
       background-image: url(../imagenes/fondo-madera.png); } }
@@ -27,8 +26,12 @@ main .card-title {
 main .form-outline {
   margin: 30px; }
 
-main .btn {
-  margin: 30px; }
+main .btn, main .btn--2 {
+  margin: 30px;
+  border-radius: 20px; }
+
+main .btn--2 {
+  background-color: #ab3ed8; }
 
 main img {
   height: 100%;

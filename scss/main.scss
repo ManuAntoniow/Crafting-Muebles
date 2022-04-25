@@ -16,11 +16,11 @@ $redes:(
 	margin: 0;
 	padding: 0;
 }
-nav{
-    background-color: $color-1;
-}
 body {
     font-family: $fuente-principal;
+    nav{
+        background-color: $color-1;
+    }
     @media (prefers-color-scheme: light) {
         background-image: url(../imagenes/fondo-madera.png);
     }
@@ -43,6 +43,11 @@ main{
     }
     .btn{
         margin: 30px;
+        @include radio(20px)
+    }
+    .btn--2{
+        @extend .btn;
+        background-color: $color-1;
     }
     img{
         height: 100%;
@@ -76,5 +81,3 @@ main{
         background-color: $color;
     }
 }
-
-//@extend

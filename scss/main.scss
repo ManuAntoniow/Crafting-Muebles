@@ -18,6 +18,9 @@ $redes:(
 }
 body {
     font-family: $fuente-principal;
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 150px;
     nav{
         background-color: $color-1;
     }
@@ -57,6 +60,11 @@ main{
     .head{
         margin-top: 20px;
     }
+}
+footer{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
 }
 @media screen and (min-width: 768px){
     .card-title{font-size: $titulo / 2;}

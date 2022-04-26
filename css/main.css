@@ -3,7 +3,10 @@
   padding: 0; }
 
 body {
-  font-family: "Fredoka", sans-serif; }
+  font-family: "Fredoka", sans-serif;
+  position: relative;
+  min-height: 100vh;
+  padding-bottom: 150px; }
   body nav {
     background-color: #ab3ed8; }
   @media (prefers-color-scheme: light) {
@@ -40,6 +43,11 @@ main img {
 
 main .head {
   margin-top: 20px; }
+
+footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0; }
 
 @media screen and (min-width: 768px) {
   .card-title {

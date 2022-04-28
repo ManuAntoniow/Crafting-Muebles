@@ -1,0 +1,11 @@
+@import "variables";
+footer{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+@each $red, $color in $redes {
+    .red--#{$red} {
+        background-color: $color;
+    }
+}

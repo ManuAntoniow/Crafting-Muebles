@@ -1,0 +1,30 @@
+@import "variables";
+main{
+    .card{
+        margin: 30px;
+        background-color: $color-2;
+        @include radio(20px);
+    }
+    .card-title{
+        color: white;
+    }
+    .form-outline{
+        margin: 30px;
+    }
+    .btn{
+        margin: 30px;
+        @include radio(20px)
+    }
+    .btn--2{
+        @extend .btn;
+        background-color: $color-1;
+    }
+    img{
+        height: 100%;
+        width: 100%;
+        @include radio(20px);
+    }
+    .head{
+        margin-top: 20px;
+    }
+}

@@ -1,0 +1,19 @@
+@import "variables";
+@media screen and (min-width: 768px){
+    .card-title{font-size: $titulo / 2;}
+    .subtitle{font-size: $titulo / 4;}
+    .card-text{font-size: $texto / 2;}
+    .head {font-size: $titulo / 2;}
+    .pregunta{
+        height: 180px;
+    }
+}
+@media screen and (min-width: 1024px){
+    .card-title{font-size: $titulo;}
+    .subtitle{font-size: $titulo / 2;}
+    .card-text{font-size: $texto;}
+    .head {font-size: $titulo;}
+    .pregunta{
+        height: 450px;
+    }
+}

@@ -11,6 +11,20 @@ body {
     nav{
         background-color: $color-1;
     }
+    a::after{
+        position: absolute;
+        content: "";
+        width: 0%;
+        height: 4px;
+        background-color: $color-2;
+        left: 50%;
+        bottom: -10px;
+        transition: all 0.3s ease-in-out;
+    }
+    a:hover::after{
+        width: 100%;
+        left: 0;
+    }
     @media (prefers-color-scheme: light) {
         background-image: url(../imagenes/fondo-madera.png);
     }

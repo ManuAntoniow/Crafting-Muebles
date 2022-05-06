@@ -8,7 +8,19 @@ body {
   min-height: 100vh;
   padding-bottom: 150px; }
   body nav {
-    background-color: #ab3ed8; }
+    background-color: #0069c0; }
+  body a::after {
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 4px;
+    background-color: #ab3ed8;
+    left: 50%;
+    bottom: -10px;
+    transition: all 0.3s ease-in-out; }
+  body a:hover::after {
+    width: 100%;
+    left: 0; }
   @media (prefers-color-scheme: light) {
     body {
       background-image: url(../imagenes/fondo-madera.png); } }
@@ -17,6 +29,49 @@ body {
       background-image: url(../imagenes/fondo-madera-oscuro.jpg); }
       body .head {
         color: white; } }
+
+footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0; }
+
+.red--facebook {
+  background-color: #3b5998; }
+
+.red--twitter {
+  background-color: #55acee; }
+
+.red--google {
+  background-color: #dd4b39; }
+
+.red--instagram {
+  background-color: #ac2bac; }
+
+main .card {
+  margin: 30px;
+  background-image: linear-gradient(-20deg, #ab3ed8 0%, #21d4fd 100%);
+  border-radius: 20px; }
+
+main .card-title {
+  color: white; }
+
+main .form-outline {
+  margin: 30px; }
+
+main .btn, main .btn--2 {
+  margin: 30px;
+  border-radius: 20px; }
+
+main .btn--2 {
+  background-color: #ab3ed8; }
+
+main img {
+  height: 100%;
+  width: 100%;
+  border-radius: 20px; }
+
+main .head {
+  margin-top: 20px; }
 
 @media screen and (min-width: 768px) {
   .card-title {
@@ -41,46 +96,3 @@ body {
     font-size: 80px; }
   .pregunta {
     height: 450px; } }
-
-footer {
-  position: absolute;
-  width: 100%;
-  bottom: 0; }
-
-.red--facebook {
-  background-color: #3b5998; }
-
-.red--twitter {
-  background-color: #55acee; }
-
-.red--google {
-  background-color: #dd4b39; }
-
-.red--instagram {
-  background-color: #ac2bac; }
-
-main .card {
-  margin: 30px;
-  background-color: #0069c0;
-  border-radius: 20px; }
-
-main .card-title {
-  color: white; }
-
-main .form-outline {
-  margin: 30px; }
-
-main .btn, main .btn--2 {
-  margin: 30px;
-  border-radius: 20px; }
-
-main .btn--2 {
-  background-color: #ab3ed8; }
-
-main img {
-  height: 100%;
-  width: 100%;
-  border-radius: 20px; }
-
-main .head {
-  margin-top: 20px; }
